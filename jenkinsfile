@@ -10,9 +10,12 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/ssawantsanket/Parabank-Automation.git'
+                git branch: 'main',
+                    url: 'https://github.com/ssawantsanket/Parabank-Automation.git'
             }
-        }stage('Build & Execute Tests') {
+        }
+
+        stage('Build & Execute Tests') {
             steps {
                 bat 'mvn clean test'
             }
