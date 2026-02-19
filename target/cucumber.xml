@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="33.397" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Login functionality" name="Login user valid credentials" time="14.008">
+<system-out><![CDATA[
+Given user navigating to login page.........................................passed
+When user should enter username and password................................passed
+And click on login button...................................................passed
+Then User should login successfully and navigate to home page...............passed
+Then Close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality" name="View Accounts Overview" time="22.525">
+<system-out><![CDATA[
+Given user navigating to login page.........................................passed
+When user should enter username and password................................passed
+And click on login button...................................................passed
+And Click on Account Overview button........................................passed
+Then User should login successfully and navigate to home page...............passed
+And user able to see accounts overview......................................passed
+Then Close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Open New Account" name="Open New Account" time="33.038">
+<system-out><![CDATA[
+Given user navigating to login page.........................................passed
+When user should enter username and password................................passed
+And click on login button...................................................passed
+* CLick on Open new Account.................................................passed
+* Select Savings account from dropdown......................................passed
+* Select exiating account from dropdown.....................................passed
+* Click on create new account button........................................passed
+Then Account should be created and Account no should be displayed...........passed
+* Close the browser.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

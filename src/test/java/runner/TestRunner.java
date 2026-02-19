@@ -19,7 +19,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		)
 					
-public class RunnerClass extends AbstractTestNGCucumberTests {
+public class TestRunner extends AbstractTestNGCucumberTests {
 
 	@Override
     @DataProvider(parallel = true)
